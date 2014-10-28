@@ -1,0 +1,1 @@
+crmhelper -erp="xxxx" -pwd="yyyy" -file="zzzz.csv" -n=100 -proxy -proxyurl="http://0.0.0.0:0000"
