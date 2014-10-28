@@ -23,7 +23,7 @@ func FileDuplex(file string, chr, chw chan string) (chan uint64, chan uint64) {
 	chread := make(chan uint64, 10)
 	chsucc := make(chan uint64, 10)
 	var readCompleted bool
-	var readNum, succNum uint64
+	var readNum, succNum uint64 // 已读入/写入缓存数量
 
 	// read
 	go func() {
