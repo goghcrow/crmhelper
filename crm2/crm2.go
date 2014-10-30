@@ -42,7 +42,7 @@ func New(erp, pwd string, n, bufferSize int) *Crm2 {
 		n:          n,
 		bufferSize: bufferSize,
 		chBuf:      bufpool,
-		User:       url.UserPassword(erp, url.QueryEscape(pwd)),
+		User:       url.UserPassword(erp, pwd),
 		HttpClient: &http.Client{Jar: cookieJar},
 	}
 }
